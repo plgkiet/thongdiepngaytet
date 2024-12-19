@@ -24,7 +24,7 @@ function generateWish() {
     let i = 0;
     wishElement.textContent = ''; 
 
-    function typeWriter() {s
+    function typeWriter() {
         if (i < text.length) {
             wishElement.textContent += text.charAt(i);
             i++;
