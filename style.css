@@ -42,6 +42,29 @@ body {
 
 }
 
+
+@media (max-width: 1366px) {
+    body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .container .wish {
+        font-size: 26px; 
+    }
+}
+
+@media (max-width: 1280px) {
+    body {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .container .wish {
+        font-size: 24px;  
+    }
+}
+
 @media (max-width: 1024px) {
     body {
         background-size: contain;
