@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'VLGolf';
-    src: url(/fonts/VLGOLF.OTF) format('opentype');
+    src: url(./fonts/VLGOLF.OTF) format('opentype');
     font-style: normal;
     font-weight: normal;
     font-display: swap;
