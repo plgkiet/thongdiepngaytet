@@ -19,7 +19,20 @@ const wishes = [
 
 function generateWish() {
     const randomIndex = Math.floor(Math.random() * wishes.length);
-    document.getElementById('wish').textContent = wishes[randomIndex];
+    const wishElement = document.getElementById('wish');
+    const text = wishes[randomIndex];
+    let i = 0;
+    wishElement.textContent = ''; 
+
+    function typeWriter() {s
+        if (i < text.length) {
+            wishElement.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+        }
+    }
+
+    typeWriter();
 }
 
 generateWish();
