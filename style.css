@@ -30,17 +30,22 @@ body {
     padding-bottom: 50px;
     overflow-y: auto;
     min-height: 100vh;
-    background-color: black;
 }
 
 .container .wish {
     font-family: 'VLGolf', sans-serif;
     font-weight: normal;
     color: #FFDD4A;
-    font-size: 30px;
+    font-size: 40px;
     word-wrap: break-word;
-
+    word-break: break-word;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: transparent;
+    border: none;
 }
+
 
 
 @media (max-width: 1366px) {
@@ -50,7 +55,7 @@ body {
     }
 
     .container .wish {
-        font-size: 26px; 
+        font-size: 36px;
     }
 }
 
@@ -61,7 +66,7 @@ body {
     }
 
     .container .wish {
-        font-size: 24px;  
+        font-size: 32px;
     }
 }
 
@@ -69,14 +74,17 @@ body {
     body {
         background-size: contain;
     }
+
+    .container .wish {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 768px) {
     body {
         padding-top: 30px;
         padding-bottom: 30px;
-        background-size: 150%; 
-
+        background-size: 150%;
     }
 
     .container .wish {
@@ -89,11 +97,10 @@ body {
     body {
         padding-top: 20px;
         padding-bottom: 20px;
-        background-size: 200%; 
+        background-size: 200%;
     }
 
     .container .wish {
         font-size: 18px;
-        line-height: 1.3;
     }
 }
