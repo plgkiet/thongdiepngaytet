@@ -14,7 +14,8 @@ const wishes = [
     "Năm mới chúc bạn \"tiền vào như nước,/ tiền ra như... cà phê nhỏ giọt\"!",
     "Tết này chúc bạn \"như ngựa phi nước đại\",/ thành công không kịp đếm!",
     "Chúc bạn năm mới vạn sự như ý - vàng mua cả ký/ - thật là hết ý.",
-    "Tết này chúc bạn luôn tỏa sáng/ như một vì tinh tú trên bầu trời rộng lớn!"
+    "Tết này chúc bạn luôn tỏa sáng/ như một vì tinh tú trên bầu trời rộng lớn!",
+    "Chúc bạn sức khoẻ - bình an - may mắn... 8386 bạn nhé!/Bạn mãi đỉnh, mãi đỉnh, mãi đỉnh!"
 ];
 
 function generateWish() {
