@@ -55,6 +55,7 @@ function generateWish() {
 generateWish();
 
 
+// chặn tải về và inspect
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 });
@@ -69,3 +70,12 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
+document.addEventListener('keydown', function (event) {
+    const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+    const isCtrlOrCommand = isMac ? event.metaKey : event.ctrlKey;
+
+    if (isCtrlOrCommand && event.key.toLowerCase() === 's') {
+        event.preventDefault(); 
+        alert("Chức năng lưu trang đã bị vô hiệu hóa!"); 
+    }
+});
