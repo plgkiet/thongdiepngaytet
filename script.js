@@ -19,7 +19,7 @@ const wishes = [
     "Mong bạn năm 2025, mỗi ngày đều như ngày nghỉ lễ,/ làm thì ít nhưng lương thì nhiều!",
     "Chúc bạn luôn “online” trong hạnh phúc,/ “offline” với muộn phiền!",
     "2025 chúc bạn giàu như Elon Musk,/ nhưng stress thì nhẹ nhàng như đi spa!",
-    "Chúc bạn năm mới lộc phát đều tay,/ ví tiền đầy nhưng bụng không đầy!",
+    "Chúc bạn năm mới lộc phát đều tay,/ ví tiền đầy và bụng luôn căng!",
     "Mong năm mới, deadline đến nhưng không đuổi kịp bạn,/ và công việc luôn đúng tiến độ!",
     "Tết này chúc bạn cười nhiều như emoji :D,/ và buồn ít như icon :)!",
     "Tết này, chúc bạn kiếm tiền dễ như “add to cart”,/ tiêu tiền chậm như mạng yếu!",
