@@ -17,7 +17,7 @@ const wishes = [
     "Tết này chúc bạn luôn tỏa sáng/ như một vì tinh tú trên bầu trời rộng lớn!",
     "Chúc bạn sức khoẻ - bình an - may mắn - 8386 bạn nhé!/Bạn mãi đỉnh, mãi đỉnh, mãi đỉnh!",
     "Mong bạn năm 2025, mỗi ngày đều như ngày nghỉ lễ,/ làm thì ít nhưng lương thì nhiều!",
-    "Chúc bạn luôn “online” trong hạnh phúc,/ “offline” với mọi muộn phiền!",
+    "Chúc bạn luôn “online” trong hạnh phúc,/ “offline” với muộn phiền!",
     "2025 chúc bạn giàu như Elon Musk,/ nhưng stress thì nhẹ nhàng như đi spa!",
     "Chúc bạn năm mới lộc phát đều tay,/ ví tiền đầy nhưng bụng không đầy!",
     "Mong năm mới, deadline đến nhưng không đuổi kịp bạn,/ và công việc luôn đúng tiến độ!",
@@ -49,7 +49,7 @@ const wishes = [
     "Chúc bạn 2025 tình yêu nở rộ,/ tiền bạc sinh sôi!",
     "Chúc bạn Tết vui như được nhận lì xì,/ tiền vào túi rủng rỉnh như chợ phiên!",
     "Năm 2025 chúc bạn vui như Tết,/ phúc lộc đầy nhà như mâm cỗ!",
-    "Mong bạn năm mới nhiều like, nhiều share,/ nhưng lương cũng phải nhiều số nhé!"
+    "Mong bạn năm mới nhiều like, nhiều share,/ nhưng lương cũng phải nhiều số!"
 ];
 
 function generateWish() {
