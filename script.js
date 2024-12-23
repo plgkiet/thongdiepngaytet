@@ -114,3 +114,11 @@ document.addEventListener('keydown', function (event) {
         alert("Chức năng lưu trang đã bị vô hiệu hóa!"); 
     }
 });
+
+window.onload = function () {
+    let count = localStorage.getItem('visitCount') || 0;
+    count++;
+    localStorage.setItem('visitCount', count);
+    console.log("Số lượt truy cập: " + count);
+};
+
