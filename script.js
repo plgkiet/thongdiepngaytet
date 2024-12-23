@@ -115,6 +115,7 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
+// kiểm tra số lượng truy cập
 window.onload = function () {
     let count = localStorage.getItem('visitCount') || 0;
     count++;
