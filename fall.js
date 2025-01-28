@@ -43,3 +43,30 @@ function animateObjects() {
 
 // Bắt đầu hoạt
 animateObjects();
+
+
+
+// chặn tải về và inspect
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+        (e.ctrlKey && e.key === 'U')) {
+        e.preventDefault();
+        
+    }
+});
+
+document.addEventListener('keydown', function (event) {
+    const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+    const isCtrlOrCommand = isMac ? event.metaKey : event.ctrlKey;
+
+    if (isCtrlOrCommand && event.key.toLowerCase() === 's') {
+        event.preventDefault(); 
+        alert("Chức năng lưu trang đã bị vô hiệu hóa!"); 
+    }
+});
