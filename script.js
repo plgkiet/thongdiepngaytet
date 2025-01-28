@@ -81,6 +81,11 @@ function generateWish() {
             wishElement2.textContent += part2.charAt(j);
             j++;
             setTimeout(typeWriter2, 100);
+        } else {
+            // Chuyển trang sau khi gõ chữ hoàn thành
+            setTimeout(function() {
+                window.location.href = "letter.html"; // Điều hướng sang trang letter.html
+            }, 1000); // Thời gian trễ sau khi hoàn tất gõ chữ (1 giây)
         }
     }
 
