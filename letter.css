@@ -62,8 +62,11 @@ body {
 #day {
     text-align: right;
     color: #FFDD4A;
+}
 
-
+#power {
+    text-align: right;
+    color: #FFDD4A;
 }
 
 p {
