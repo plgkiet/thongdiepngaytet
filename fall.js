@@ -8,6 +8,7 @@ function initializeObject(obj) {
     const speed = 0.5 + Math.random(); // Tốc độ rơi ngẫu nhiên (px mỗi frame)
 
     // Thiết lập vị trí ban đầu
+    obj.style.position = 'fixed'; // Giữ cố định trên màn hình
     obj.style.left = `${randomX}px`;
     obj.style.top = `-20px`; // Bắt đầu từ ngoài màn hình
 
