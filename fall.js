@@ -3,7 +3,7 @@ const objects = document.querySelectorAll('.falling-object');
 function initializeObject(obj) {
     const screenWidth = window.innerWidth; 
     const randomX = Math.random() * (screenWidth - 20); 
-    const speed = 2 + Math.random();
+    const speed = 0.5 + Math.random();
 
     obj.style.position = 'fixed';
     obj.style.left = `${randomX}px`;
