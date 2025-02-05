@@ -1,53 +1,43 @@
-// Lấy tất cả các object
 const objects = document.querySelectorAll('.falling-object');
 
-// Hàm để tạo vị trí ngẫu nhiên và khởi tạo các object
 function initializeObject(obj) {
-    const screenWidth = window.innerWidth; // Chiều rộng màn hình
-    const randomX = Math.random() * (screenWidth - 20); // Vị trí ngang ngẫu nhiên (trừ chiều rộng object)
-    const speed = 0.5 + Math.random(); // Tốc độ rơi ngẫu nhiên (px mỗi frame)
+    const screenWidth = window.innerWidth; 
+    const randomX = Math.random() * (screenWidth - 20); 
+    const speed = 0.5 + Math.random();
 
-    // Thiết lập vị trí ban đầu
-    obj.style.position = 'fixed'; // Giữ cố định trên màn hình
+    obj.style.position = 'fixed';
     obj.style.left = `${randomX}px`;
-    obj.style.top = `-20px`; // Bắt đầu từ ngoài màn hình
+    obj.style.top = `-20px`; 
 
-    // Gán tốc độ rơi vào dataset
+
     obj.dataset.speed = speed;
 }
 
-// Hàm để cập nhật vị trí rơi
 function updateObjectPosition(obj) {
-    const currentTop = parseFloat(obj.style.top); // Lấy vị trí hiện tại
-    const speed = parseFloat(obj.dataset.speed); // Lấy tốc độ từ dataset
+    const currentTop = parseFloat(obj.style.top); 
+    const speed = parseFloat(obj.dataset.speed); 
 
-    // Cập nhật vị trí theo tốc độ
     const newTop = currentTop + speed;
     obj.style.top = `${newTop}px`;
 
-    // Nếu object rơi quá màn hình, khởi tạo lại
     if (newTop > window.innerHeight) {
         initializeObject(obj);
     }
 }
 
-// Khởi tạo tất cả object
 objects.forEach((obj) => {
     initializeObject(obj);
 });
 
-// Vòng lặp để cập nhật vị trí
 function animateObjects() {
     objects.forEach((obj) => updateObjectPosition(obj));
-    requestAnimationFrame(animateObjects); // Gọi lại hàm để tạo vòng lặp
+    requestAnimationFrame(animateObjects); 
 }
 
-// Bắt đầu hoạt
 animateObjects();
 
 
 
-// chặn tải về và inspect
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 });
@@ -69,5 +59,18 @@ document.addEventListener('keydown', function (event) {
     if (isCtrlOrCommand && event.key.toLowerCase() === 's') {
         event.preventDefault(); 
         alert("Chức năng lưu trang đã bị vô hiệu hóa!"); 
+    }
+});
+
+document.addEventListener('keydown', function (event) {
+    const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+    const isCtrlOrCommand = isMac ? event.metaKey : event.ctrlKey;
+
+    if (
+        (isCtrlOrCommand && event.key.toLowerCase() === 'c') ||
+        (isCtrlOrCommand && event.key.toLowerCase() === 'v')
+    ) {
+        event.preventDefault();
+        alert("Chức năng sao chép và dán đã bị vô hiệu hóa!");
     }
 });
